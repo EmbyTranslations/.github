@@ -1,0 +1,14 @@
+# ---
+# name: Trigger Workflows
+# description: Triggers workflows on push
+# ---
+
+name: Trigger Workflows
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  trigger:
+    uses: EmbyTranslations/actions/.github/workflows/trigger-on-push.yml@main
